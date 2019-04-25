@@ -3,7 +3,6 @@ for grading machine learning predictions
 
 Program runs on pandas python library
 
-=============================================================
              How to use PredictionsGrader  
 =============================================================
 
@@ -60,3 +59,4 @@ Use Case:
         grade = PredictionsGraderCSV(submission, answer).compare('Survived', 'Survived').grade().get(format="data")
         OR
         grade = PredictionsGraderCSV(submission, answer).compare('Survived', 'Survived').grade().get_csv(filename="Project Prediction.csv", append_to="Id", predictions_name="my predictions")
+=======
