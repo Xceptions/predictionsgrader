@@ -52,7 +52,7 @@ class PredictionsGrader():
 
 class PredictionsGraderCSV():
     '''
-        This class is used for comparing csv files
+        Class compares CSV files
     '''
 
     def __init__(self, predictions_file, target_file):
