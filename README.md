@@ -4,7 +4,6 @@ for grading machine learning predictions
 Pandas must be installed for program to run successfully
 
              How to use PredictionsGrader  
-=============================================================
 
 
 The program contains two classes
@@ -12,9 +11,9 @@ The program contains two classes
 2. PredictionsGraderCSV
 
 
-========================
-PredictionsGrader class
-========================
+
+            PredictionsGrader class
+
 
 This compares two columns. The files are expected to be the predictions gotten in the submitted column and the predictions
 stated in the confirmatory column.
@@ -35,14 +34,15 @@ It takes in the "format" parameter with value of "data" and returns a dataframe 
 returns the percentages of matched to unmatched.
 
 Use Case:
+
         grade = PredictionsGrader(y_predictions, y_target).grade(return_as="1/0").get(format="data")
         print(grade)
 
 
 
-===========================
-PredictionsGraderCSV class
-===========================
+
+        PredictionsGraderCSV class
+
 This compares two csv files.
 It takes in the two files to be compared as arguments to it's initializer in the order of predictions file first, then
 confirmatory file next.
@@ -56,6 +56,7 @@ and predictions_name (the name to use in saving your predictions)
 
 
 Use Case:
+
         grade = PredictionsGraderCSV(submission, answer).compare('Survived', 'Survived').grade().get(format="data")
 
         OR
