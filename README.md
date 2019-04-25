@@ -3,16 +3,14 @@ for grading machine learning predictions
 
 Pandas must be installed for program to run successfully
 
-             How to use PredictionsGrader  
+    How to use PredictionsGrader  
 
 
 The program contains two classes
 1. PredictionsGrader
 2. PredictionsGraderCSV
 
-
-
-            PredictionsGrader class
+        PredictionsGrader class
 
 
 This compares two columns. The files are expected to be the predictions gotten in the submitted column and the predictions
@@ -41,7 +39,7 @@ Use Case:
 
 
 
-        PredictionsGraderCSV class
+    PredictionsGraderCSV class
 
 This compares two csv files.
 It takes in the two files to be compared as arguments to it's initializer in the order of predictions file first, then
