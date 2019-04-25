@@ -1,7 +1,7 @@
 # predictionsgrader
 for grading machine learning predictions
 
-Program runs on pandas python library
+Pandas must be installed for program to run successfully
 
              How to use PredictionsGrader  
 =============================================================
@@ -57,6 +57,8 @@ and predictions_name (the name to use in saving your predictions)
 
 Use Case:
         grade = PredictionsGraderCSV(submission, answer).compare('Survived', 'Survived').grade().get(format="data")
+
         OR
+
         grade = PredictionsGraderCSV(submission, answer).compare('Survived', 'Survived').grade().get_csv(filename="Project Prediction.csv", append_to="Id", predictions_name="my predictions")
-=======
+
